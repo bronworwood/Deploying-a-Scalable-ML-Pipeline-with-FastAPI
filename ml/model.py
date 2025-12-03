@@ -22,14 +22,9 @@ def train_model(X_train, y_train):
         Trained machine learning model.
     """
     # TODO: implement the function
-    model = RandomForestClassifier(
-        n_estimators=100,
-        random_state=42,
-        n_jobs=-1
-    )
-
-    # Fit model to training data
+    model = RandomForestClassifier() # Fit model to training data
     model.fit(X_train, y_train)
+    return model
 
     pass
 
